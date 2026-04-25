@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <script>!function(){var t=localStorage.getItem('svea_theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primära meta-taggar -->
+  <title>SveaStream – #1 IPTV-tjänst i Sverige | Svenska IPTV-kanaler</title>
+  <meta name="description" content="SveaStream är den bästa svenska IPTV-tjänsten — 50 000+ kanaler inklusive SVT, TV4 och all nordisk TV i HD & 4K. Starta din gratis provperiod idag. IPTV Sverige.">
+  <meta name="keywords" content="sveastream, swedish iptv, iptv sverige, svenska iptv, svea iptv, svea stream, sveaiptv, swedishiptv, iptv swedish channels, swedish stream, nordic iptv, nordic streaming, bästa iptv sverige">
+  <link rel="canonical" href="https://sveastream.se/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SveaStream">
+  <meta property="og:title" content="SveaStream – #1 IPTV-tjänst i Sverige | Svenska IPTV-kanaler">
+  <meta property="og:description" content="50 000+ live-kanaler inklusive SVT, TV4 och all nordisk TV i HD & 4K. Ingen parabolantenn. Gratis provperiod — omedelbar aktivering. Bästa IPTV Sverige.">
+  <meta property="og:url" content="https://sveastream.se/">
+  <meta property="og:image" content="https://sveastream.se/images/og-image.jpg">
+  <meta property="og:locale" content="sv_SE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SveaStream – #1 IPTV-tjänst i Sverige">
+  <meta name="twitter:description" content="50 000+ IPTV-kanaler i HD & 4K. Gratis provperiod — omedelbar aktivering via WhatsApp.">
+  <meta name="twitter:image" content="https://sveastream.se/images/og-image.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Laddningsskärm ──────────────────────────────────────────────────────── -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loading-logo">
+    <div class="logo-icon"><i class="fa-solid fa-play"></i></div>
+    <span><span class="logo-svea">Svea</span>Stream</span>
+  </div>
+  <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon"><i class="fa-solid fa-play"></i></div>
+      Svea<span>Stream</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="channels.html">Kanaler</a></li>
+      <li><a href="pricing.html">Priser</a></li>
+      <li><a href="blog.html">Blogg</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Logga in</a>
+      <a href="pricing.html" class="btn btn-primary">Kom igång</a>
+      <button class="btn-theme-toggle" aria-label="Växla tema"><i class="fa-solid fa-sun"></i></button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Mobilmeny ──────────────────────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Hem</a>
+  <a href="channels.html">Kanaler</a>
+  <a href="pricing.html">Priser</a>
+  <a href="blog.html">Blogg</a>
+  <a href="contact.html">Kontakt</a>
+  <a href="pricing.html" class="btn btn-primary">Kom igång gratis</a>
+</div>
+
+<!-- ── Hero ───────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="flag-icon">🇸🇪</span> #1 IPTV i Sverige
+      </div>
+      <h1>Premium Nordisk <span class="highlight">IPTV-upplevelse</span></h1>
+      <p>Få tillgång till 50 000+ live-kanaler från Sverige, Norge, Danmark, Finland och 80+ länder — i kristallklar HD &amp; 4K. Inga kontrakt, ingen parabolantenn krävs.</p>
+      <div class="hero-actions">
+        <a href="pricing.html" class="btn btn-yellow">
+          <i class="fa-solid fa-bolt"></i> Starta gratis provperiod
+        </a>
+        <a href="channels.html" class="btn btn-outline">
+          <i class="fa-solid fa-list"></i> Bläddra bland kanaler
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">50K+</div>
+          <div class="stat-label">Live-kanaler</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4K</div>
+          <div class="stat-label">Ultra HD-kvalitet</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Enheter samtidigt</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">99,9%</div>
+          <div class="stat-label">Drifttid garanterad</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-tv">
+        <div class="tv-bar">
+          <div class="tv-dot"></div>
+          <div class="tv-dot"></div>
+          <div class="tv-dot"></div>
+        </div>
+        <div class="tv-screen">
+          <div class="tv-play-btn"><i class="fa-solid fa-play"></i></div>
+        </div>
+        <div class="tv-channel-list">
+          <div class="tv-ch"><i class="fa-solid fa-flag"></i>SVT1</div>
+          <div class="tv-ch"><i class="fa-solid fa-tv"></i>TV4</div>
+          <div class="tv-ch"><i class="fa-solid fa-futbol"></i>Sport</div>
+          <div class="tv-ch"><i class="fa-solid fa-film"></i>HBO</div>
+          <div class="tv-ch"><i class="fa-solid fa-child"></i>Barn</div>
+          <div class="tv-ch"><i class="fa-solid fa-newspaper"></i>Nyheter</div>
+          <div class="tv-ch"><i class="fa-solid fa-music"></i>MTV</div>
+          <div class="tv-ch"><i class="fa-solid fa-earth-europe"></i>Intl</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Filmslider ──────────────────────────────────────────────────────────── -->
+<section class="movies-slider">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="badge">På begäran</div>
+      <h2>Populärt just nu på <span class="highlight">SveaStream</span></h2>
+      <p>80 000+ filmer och serier tillgängliga på begäran — alltid i HD eller bättre. Nya titlar läggs till varje vecka.</p>
+    </div>
+  </div>
+  <!-- Rad 1: scrollar åt vänster -->
+  <div class="slider-row-wrap">
+    <div class="slider-track scroll-left" id="slider-row-1"></div>
+  </div>
+  <!-- Rad 2: scrollar åt höger -->
+  <div class="slider-row-wrap">
+    <div class="slider-track scroll-right" id="slider-row-2"></div>
+  </div>
+</section>
+
+<!-- ── Kanalremsa ─────────────────────────────────────────────────────────── -->
+<div class="brands-strip">
+  <div class="brands-track">
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> SVT1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> TV4</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> Kanal 5</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> TV3</div>
+    <div class="brand-item"><i class="fa-solid fa-futbol"></i> Viasat Sport</div>
+    <div class="brand-item"><i class="fa-solid fa-film"></i> HBO Nordic</div>
+    <div class="brand-item"><i class="fa-solid fa-star"></i> Discovery+</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> NRK1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> DR1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> Yle</div>
+    <div class="brand-item"><i class="fa-solid fa-film"></i> CNN</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> BBC World</div>
+    <!-- dubblering för sömlös loop -->
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> SVT1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> TV4</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> Kanal 5</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> TV3</div>
+    <div class="brand-item"><i class="fa-solid fa-futbol"></i> Viasat Sport</div>
+    <div class="brand-item"><i class="fa-solid fa-film"></i> HBO Nordic</div>
+    <div class="brand-item"><i class="fa-solid fa-star"></i> Discovery+</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> NRK1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> DR1</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> Yle</div>
+    <div class="brand-item"><i class="fa-solid fa-film"></i> CNN</div>
+    <div class="brand-item"><i class="fa-solid fa-tv"></i> BBC World</div>
+  </div>
+</div>
+
+<!-- ── Funktioner ─────────────────────────────────────────────────────────── -->
+<section class="section features-v2">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="badge">Varför SveaStream</div>
+      <h2>Varför välja <span class="highlight">SveaStream?</span></h2>
+      <p>Byggd för nordiska tittare överallt — blixtsnabb, kristallklar och alltid tillgänglig.</p>
+    </div>
+    <div class="features-v2-grid">
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+        <h3>50 000+ Kanaler</h3>
+        <p>Livesändningar från Sverige, Norge, Danmark, Finland och 80+ länder. Alla genrer, alla språk, varje dag.</p>
+      </div>
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>VOD-bibliotek</h3>
+        <p>80 000+ filmer och serier på begäran inklusive de senaste nordiska och internationella titlarna. Nya titlar varje vecka.</p>
+      </div>
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-circle-play"></i></div>
+        <h3>4K-kvalitet</h3>
+        <p>Kristallklara Ultra HD-streams på alla stora kanaler. Upplev TV som det är tänkt att ses — utan kompromiss.</p>
+      </div>
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Alla enheter</h3>
+        <p>Streama sömlöst på Smart-TV, mobil, surfplatta, PC, Amazon Fire Stick, Apple TV eller Android Box — var du än är.</p>
+      </div>
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>24/7 Support</h3>
+        <p>Svensktalande support via WhatsApp, livechatt och e-post. Vårt team finns tillgängligt dygnet runt — alltid redo.</p>
+      </div>
+
+      <div class="feature-card-v2 fade-up">
+        <div class="fv2-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Säker &amp; stabil</h3>
+        <p>99,9% drifttidsgaranti med krypterade streams, servrar i företagsklass och automatisk redundans i hela Europa.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Kanalöversikt ───────────────────────────────────────────────────────── -->
+<section class="section channels-preview">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="badge">Kanalöversikt</div>
+      <h2>50 000+ Kanaler, <span class="highlight-blue">alla genrer</span></h2>
+      <p>Från svenska klassiker till internationella hits — allt i ett abonnemang.</p>
+    </div>
+
+    <div class="channels-tabs fade-up">
+      <button class="tab-btn active" data-tab="nordic">🇸🇪 Nordisk</button>
+      <button class="tab-btn" data-tab="sports">⚽ Sport</button>
+      <button class="tab-btn" data-tab="movies">🎬 Filmer</button>
+      <button class="tab-btn" data-tab="news">📰 Nyheter</button>
+      <button class="tab-btn" data-tab="kids">🧒 Barn</button>
+    </div>
+
+    <!-- Nordisk -->
+    <div class="tab-panel active" id="tab-nordic">
+      <div class="channels-grid">
+        <div class="channel-card"><i class="fa-solid fa-flag"></i><div class="ch-name">SVT1</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">SVT2</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">TV4</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">Kanal 5</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">TV3</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">NRK1</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">DR1</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-tv"></i><div class="ch-name">Yle TV1</div><div class="ch-hd">HD</div></div>
+      </div>
+    </div>
+
+    <!-- Sport -->
+    <div class="tab-panel" id="tab-sports">
+      <div class="channels-grid">
+        <div class="channel-card"><i class="fa-solid fa-futbol"></i><div class="ch-name">Viasat Sport</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-futbol"></i><div class="ch-name">Eurosport 1</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-futbol"></i><div class="ch-name">Eurosport 2</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-basketball"></i><div class="ch-name">ESPN</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-hockey-puck"></i><div class="ch-name">Sport Bladet</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-trophy"></i><div class="ch-name">Sky Sports</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-flag-checkered"></i><div class="ch-name">Motors TV</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-dumbbell"></i><div class="ch-name">DAZN</div><div class="ch-hd">4K</div></div>
+      </div>
+    </div>
+
+    <!-- Filmer -->
+    <div class="tab-panel" id="tab-movies">
+      <div class="channels-grid">
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">HBO Nordic</div><div class="ch-hd">4K</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">SF Kanalen</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">TV5000</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">Cmore First</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">Cinema 1</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">Action Max</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">TCM</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-film"></i><div class="ch-name">Sundance TV</div><div class="ch-hd">HD</div></div>
+      </div>
+    </div>
+
+    <!-- Nyheter -->
+    <div class="tab-panel" id="tab-news">
+      <div class="channels-grid">
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">SVT Nyheter</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">CNN</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">BBC World</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">Al Jazeera</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">Sky News</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">France 24</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">Euronews</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-newspaper"></i><div class="ch-name">CNBC</div><div class="ch-hd">HD</div></div>
+      </div>
+    </div>
+
+    <!-- Barn -->
+    <div class="tab-panel" id="tab-kids">
+      <div class="channels-grid">
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Barnkanalen</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Nickelodeon</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Cartoon Network</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Disney Channel</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Disney Junior</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Boomerang</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Baby TV</div><div class="ch-hd">HD</div></div>
+        <div class="channel-card"><i class="fa-solid fa-child"></i><div class="ch-name">Minimax</div><div class="ch-hd">HD</div></div>
+      </div>
+    </div>
+
+    <div class="view-all-wrap fade-up">
+      <a href="channels.html" class="btn btn-outline"><i class="fa-solid fa-grid-2"></i> Visa alla 50 000+ kanaler</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Prisöversikt ────────────────────────────────────────────────────────── -->
+<section class="section new-pricing-section">
+  <div class="container">
+
+    <!-- Sektionshuvud -->
+    <div class="section-header text-center fade-up">
+      <div class="badge">Välj din plan</div>
+      <h2>Välj enheter, sedan <span class="highlight">abonnemangslängd</span></h2>
+      <p>Alla planer inkluderar 50 000+ kanaler i HD &amp; 4K. Välj antal enheter och den abonnemangslängd som passar dig bäst.</p>
+    </div>
+
+    <!-- ── Enhetsväljare ──────────────────────────────────────────────────── -->
+    <div class="device-selector fade-up">
+      <p class="device-selector-label">
+        <i class="fa-solid fa-display"></i>&nbsp; Hur många enheter behöver du?
+      </p>
+      <div class="device-buttons">
+
+        <button class="device-btn active" data-devices="1">
+          <div class="device-icons">
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <span class="device-btn-label">1 Enhet</span>
+        </button>
+
+        <button class="device-btn" data-devices="2">
+          <div class="device-icons">
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <span class="device-btn-label">2 Enheter</span>
+        </button>
+
+        <button class="device-btn" data-devices="3">
+          <div class="device-icons">
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <span class="device-btn-label">3 Enheter</span>
+        </button>
+
+        <button class="device-btn" data-devices="4">
+          <div class="device-icons icons-4">
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <span class="device-btn-label">4 Enheter</span>
+        </button>
+
+      </div>
+      <p class="device-multiplier-note" id="device-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="device-note-text">1 enhet — standardpris (×1.0)</span>
+      </p>
+    </div>
+
+    <!-- ── Abonnemangskort ─────────────────────────────────────────────────── -->
+    <div class="duration-pricing-grid">
+
+      <!-- 1 Månad -->
+      <div class="duration-card fade-up" data-base="99" data-months="1">
+        <div class="duration-header">
+          <div class="duration-badge">
+            <i class="fa-regular fa-calendar"></i> 1 Månad
+          </div>
+        </div>
+        <div class="duration-price">
+          <span class="dur-currency">kr</span>
+          <span class="dur-amount">15</span>
+        </div>
+        <div class="dur-per-month">kr<span class="dur-monthly">15.00</span>&nbsp;/ mån</div>
+        <ul class="dur-features">
+          <li><i class="fa-solid fa-circle-check"></i> 50 000+ live-kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> HD &amp; 4K-streaming</li>
+          <li><i class="fa-solid fa-circle-check"></i> Alla nordiska &amp; svenska kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> Premium sportpaket</li>
+          <li><i class="fa-solid fa-circle-check"></i> Support dygnet runt</li>
+          <li><i class="fa-solid fa-circle-check"></i> Avsluta när som helst</li>
+        </ul>
+        <a href="#" class="btn btn-outline subscribe-btn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Prenumerera via WhatsApp
+        </a>
+      </div>
+
+      <!-- 3 Månader -->
+      <div class="duration-card fade-up" data-base="199" data-months="3">
+        <div class="duration-header">
+          <div class="duration-badge">
+            <i class="fa-regular fa-calendar"></i> 3 Månader
+          </div>
+          <span class="dur-save-pill">Spara 22%</span>
+        </div>
+        <div class="duration-price">
+          <span class="dur-currency">kr</span>
+          <span class="dur-amount">35</span>
+        </div>
+        <div class="dur-per-month">kr<span class="dur-monthly">11.67</span>&nbsp;/ mån</div>
+        <ul class="dur-features">
+          <li><i class="fa-solid fa-circle-check"></i> 50 000+ live-kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> HD &amp; 4K-streaming</li>
+          <li><i class="fa-solid fa-circle-check"></i> Alla nordiska &amp; svenska kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> Premium sportpaket</li>
+          <li><i class="fa-solid fa-circle-check"></i> 7-dagars catch-up TV</li>
+          <li><i class="fa-solid fa-circle-check"></i> Support dygnet runt</li>
+        </ul>
+        <a href="#" class="btn btn-outline subscribe-btn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Prenumerera via WhatsApp
+        </a>
+      </div>
+
+      <!-- 6 Månader — Populärast -->
+      <div class="duration-card popular fade-up" data-base="399" data-months="6">
+        <div class="duration-popular-label">
+          <i class="fa-solid fa-star"></i> Populärast
+        </div>
+        <div class="duration-header">
+          <div class="duration-badge">
+            <i class="fa-regular fa-calendar"></i> 6 Månader
+          </div>
+          <span class="dur-save-pill">Spara 39%</span>
+        </div>
+        <div class="duration-price">
+          <span class="dur-currency">kr</span>
+          <span class="dur-amount">55</span>
+        </div>
+        <div class="dur-per-month">kr<span class="dur-monthly">9.17</span>&nbsp;/ mån</div>
+        <ul class="dur-features">
+          <li><i class="fa-solid fa-circle-check"></i> 50 000+ live-kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> HD &amp; 4K-streaming</li>
+          <li><i class="fa-solid fa-circle-check"></i> Alla nordiska &amp; svenska kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> Premium sportpaket</li>
+          <li><i class="fa-solid fa-circle-check"></i> 7-dagars catch-up TV</li>
+          <li><i class="fa-solid fa-circle-check"></i> Prioriterad support dygnet runt</li>
+        </ul>
+        <a href="#" class="btn btn-primary subscribe-btn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Prenumerera via WhatsApp
+        </a>
+      </div>
+
+      <!-- 12 Månader -->
+      <div class="duration-card fade-up" data-base="699" data-months="12">
+        <div class="duration-header">
+          <div class="duration-badge">
+            <i class="fa-regular fa-calendar"></i> 12 Månader
+          </div>
+          <span class="dur-save-pill best-val">Bästa värde — Spara 50%</span>
+        </div>
+        <div class="duration-price">
+          <span class="dur-currency">kr</span>
+          <span class="dur-amount">99</span>
+        </div>
+        <div class="dur-per-month">kr<span class="dur-monthly"> 98.50</span>&nbsp;/ mån</div>
+        <ul class="dur-features">
+          <li><i class="fa-solid fa-circle-check"></i> 50 000+ live-kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> HD &amp; 4K-streaming</li>
+          <li><i class="fa-solid fa-circle-check"></i> Alla nordiska &amp; svenska kanaler</li>
+          <li><i class="fa-solid fa-circle-check"></i> Premium sport + PPV-evenemang</li>
+          <li><i class="fa-solid fa-circle-check"></i> 7-dagars catch-up TV</li>
+          <li><i class="fa-solid fa-circle-check"></i> Dedikerad telefonsupport</li>
+        </ul>
+        <a href="#" class="btn btn-yellow subscribe-btn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Prenumerera via WhatsApp
+        </a>
+      </div>
+
+    </div><!-- /duration-pricing-grid -->
+
+    <!-- ── Betalning & provperiod ──────────────────────────────────────────── -->
+    <div class="payment-note-bar fade-up">
+      <div class="payment-methods">
+        <span class="pay-label">Vi accepterar</span>
+        <div class="pay-icons">
+          <span class="pay-chip"><i class="fa-brands fa-paypal"></i> PayPal</span>
+          <span class="pay-chip"><i class="fa-solid fa-building-columns"></i> Banköverföring</span>
+          <span class="pay-chip"><i class="fa-solid fa-coins"></i> Krypto</span>
+        </div>
+      </div>
+      <div class="payment-divider"></div>
+      <div class="trial-note">
+        <i class="fa-solid fa-gift"></i>
+        <span><strong>Gratis provperiod tillgänglig på begäran</strong> — skicka ett meddelande via WhatsApp så aktiverar vi din direkt.</span>
+      </div>
+    </div>
+
+    <p class="text-center text-muted fade-up" style="margin-top:20px;font-size:0.82rem;">
+      <i class="fa-solid fa-lock"></i>&nbsp; Säker &amp; omedelbar aktivering &nbsp;·&nbsp;
+      <i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>&nbsp; Svar på WhatsApp inom minuter &nbsp;·&nbsp;
+      Avsluta när som helst
+    </p>
+
+  </div>
+</section>
+
+<!-- ── Recensioner ─────────────────────────────────────────────────────────── -->
+<section class="section testimonials-v2">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="badge">Kundrecensioner</div>
+      <h2>Älskad av nordiska tittare <span class="highlight">världen över</span></h2>
+      <p>Gå med i 50 000+ nöjda prenumeranter som streamar svensk TV från varje hörn av världen.</p>
+    </div>
+    <div class="testi-v2-grid">
+
+      <div class="testi-v2-card fade-up">
+        <div class="testi-v2-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-v2-quote">"Äntligen kan jag se SVT och TV4 live härifrån London! Kvaliteten är kristallklar och supporten var otroligt hjälpsam. Rekommenderar varmt till alla svenskar utomlands."</p>
+        <div class="testi-v2-author">
+          <div class="testi-v2-avatar">EB</div>
+          <div class="testi-v2-info">
+            <div class="testi-v2-name">Erik Bergström</div>
+            <div class="testi-v2-city"><i class="fa-solid fa-location-dot"></i> London, UK</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-v2-card fade-up">
+        <div class="testi-v2-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-v2-quote">"Bästa IPTV-tjänsten jag testat. Alla svenska kanaler, Allsvenskan i 4K och ett VOD-bibliotek som slår allt. Installationen tog under 5 minuter. Toppen!"</p>
+        <div class="testi-v2-author">
+          <div class="testi-v2-avatar">LM</div>
+          <div class="testi-v2-info">
+            <div class="testi-v2-name">Linnea Magnusson</div>
+            <div class="testi-v2-city"><i class="fa-solid fa-location-dot"></i> Göteborg, Sverige</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-v2-card fade-up">
+        <div class="testi-v2-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-v2-quote">"Jeg bruker SveaStream for å se norske og svenske kanaler. Strålende bildekvalitet, ingen buffering og enkel oppsett. Kundeservicen svarte på WhatsApp på få minutter!"</p>
+        <div class="testi-v2-author">
+          <div class="testi-v2-avatar">OA</div>
+          <div class="testi-v2-info">
+            <div class="testi-v2-name">Olav Andersen</div>
+            <div class="testi-v2-city"><i class="fa-solid fa-location-dot"></i> Bergen, Norge</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────────────────────── -->
+<section class="cta-v2">
+  <div class="cta-v2-bg-orb cta-orb-1"></div>
+  <div class="cta-v2-bg-orb cta-orb-2"></div>
+  <div class="container cta-v2-inner">
+    <div class="cta-v2-badge fade-up"><i class="fa-solid fa-bolt"></i> Begränsad tid — Gratis provperiod</div>
+    <h2 class="fade-up">Börja strömma nordisk TV <span class="highlight">idag</span></h2>
+    <p class="fade-up">Gå med i 50 000+ prenumeranter. Få omedelbar tillgång till 50 000+ kanaler och 80 000+ filmer. Inga kontrakt, ingen parabolantenn — bara ren underhållning.</p>
+    <div class="cta-v2-actions fade-up">
+      <a href="https://wa.me/17867352904?text=Hej!%20Jag%20vill%20starta%20en%20gratis%20provperiod%20på%20SveaStream.%20Kan%20du%20hjälpa%20mig%20komma%20igång%3F" class="btn cta-wa-btn" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Få gratis provperiod på WhatsApp
+      </a>
+      <a href="pricing.html" class="btn cta-outline-btn">
+        <i class="fa-solid fa-list"></i> Visa alla paket
+      </a>
+    </div>
+    <div class="cta-v2-trust fade-up">
+      <span><i class="fa-solid fa-check-circle"></i> Inget kreditkort krävs</span>
+      <span><i class="fa-solid fa-check-circle"></i> 3 dagars gratis provperiod</span>
+      <span><i class="fa-solid fa-check-circle"></i> Avbryt när som helst</span>
+      <span><i class="fa-solid fa-check-circle"></i> Omedelbar aktivering</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────────────────────────── -->
+<footer class="footer-v2">
+  <div class="container">
+    <div class="footer-v2-grid">
+
+      <!-- Kol 1: Varumärke -->
+      <div class="footer-col-v2 footer-col-brand">
+        <a href="index.html" class="nav-logo footer-logo">
+          <div class="logo-icon"><i class="fa-solid fa-play"></i></div>
+          <span class="logo-svea">Svea</span><span class="logo-stream">Stream</span>
+        </a>
+        <p>Sveriges ledande IPTV-tjänst — levererar nordisk och internationell television till varje hörn av världen sedan 2019.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/17867352904" class="footer-social-link footer-social-wa" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Kol 2: Snabblänkar -->
+      <div class="footer-col-v2">
+        <h4 class="footer-v2-heading">Snabblänkar</h4>
+        <ul class="footer-v2-list">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Hem</a></li>
+          <li><a href="channels.html"><i class="fa-solid fa-chevron-right"></i> Kanaler</a></li>
+          <li><a href="pricing.html"><i class="fa-solid fa-chevron-right"></i> Priser</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blogg</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Kontakt</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Gratis provperiod</a></li>
+        </ul>
+      </div>
+
+      <!-- Kol 3: Populära sökningar (SEO) -->
+      <div class="footer-col-v2">
+        <h4 class="footer-v2-heading">Populära sökningar</h4>
+        <ul class="footer-keywords">
+          <li><a href="channels.html">Swedish IPTV</a></li>
+          <li><a href="channels.html">IPTV Sverige</a></li>
+          <li><a href="channels.html">Nordic IPTV</a></li>
+          <li><a href="channels.html">Svenska IPTV</a></li>
+          <li><a href="channels.html">IPTV Sverige Gratis</a></li>
+          <li><a href="channels.html">Bästa IPTV Sverige</a></li>
+          <li><a href="channels.html">Nordic Streaming</a></li>
+          <li><a href="channels.html">IPTV Swedish Channels</a></li>
+        </ul>
+      </div>
+
+      <!-- Kol 4: Kontakt -->
+      <div class="footer-col-v2">
+        <h4 class="footer-v2-heading">Kontakta oss</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/17867352904" target="_blank" rel="noopener">+1 786 735 2904</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@sveastream.se">support@sveastream.se</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Stockholm, Sverige</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span>Support dygnet runt</span>
+          </li>
+        </ul>
+        <a href="https://wa.me/17867352904?text=Hej!%20Jag%20behöver%20hjälp%20med%20SveaStream." class="btn footer-wa-btn" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Chatta med oss
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-v2-bottom">
+      <div>&copy; 2025 SveaStream AB. Alla rättigheter förbehållna.</div>
+      <div class="footer-v2-flag"><span>🇸🇪</span> Gjord med stolthet i Sverige</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Tillbaka till toppen ────────────────────────────────────────────────── -->
+<button id="back-to-top" aria-label="Tillbaka till toppen"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ── Cookiebanner ───────────────────────────────────────────────────────── -->
+<div id="cookie-banner" role="dialog" aria-label="Cookiesamtycke">
+  <span class="cookie-icon" aria-hidden="true">🍪</span>
+  <p class="cookie-text">Vi använder cookies för att förbättra din upplevelse och analysera trafik. <a href="#">Läs mer</a>.</p>
+  <div class="cookie-actions">
+    <button id="accept-cookies" class="btn-cookie-accept">Acceptera</button>
+    <button id="decline-cookies" class="btn-cookie-decline">Avböj</button>
+  </div>
+</div>
+
+<!-- ── Flytande WhatsApp ───────────────────────────────────────────────────── -->
+<a href="https://wa.me/17867352904?text=Hej!%20Jag%20är%20intresserad%20av%20SveaStream.%20Kan%20du%20hjälpa%20mig%20komma%20igång%3F" class="float-wa" target="_blank" rel="noopener" aria-label="Chatta på WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="float-wa-tooltip">Chatta med oss!</span>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
