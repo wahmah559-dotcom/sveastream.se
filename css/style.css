@@ -244,9 +244,9 @@ button, input, textarea, select {
   position: relative;
   padding: 120px 0 60px;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(10, 14, 26, 0.92) 0%, rgba(0, 94, 184, 0.75) 100%),
-    url('https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=1920&q=80') center/cover no-repeat;
+ background: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url('../images/iptv-family-watching-tv.jpg') center/cover no-repeat;
 }
 .hero::before {
   content: '';
