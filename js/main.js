@@ -137,15 +137,26 @@ if (cookieBanner && !localStorage.getItem('svea_cookies')) {
 
 // ── Movie Slider ─────────────────────────────────────────────────────────────────
 const movieData = [
-  { title: 'Dune: Part Two',              genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg' },
-  { title: 'Oppenheimer',                 genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg' },
-  { title: 'The Batman',                  genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/74xTEgt7R36Fpooo50r9T25onhq.jpg' },
-  { title: 'Avatar: The Way of Water',    genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg' },
-  { title: 'Top Gun: Maverick',           genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/62HCnUTziyWcpDaBO2i1DX17ljH.jpg' },
-  { title: 'John Wick 4',                 genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w185/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg' },
-  { title: 'Barbie',                      genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w185/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg' },
-  { title: 'Spider-Man: No Way Home',     genre: '4K',    poster: 'https://image.tmdb.org/t/p/w185/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg' },
- 
+  { title: 'Dune: Part Two',              genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg' },
+  { title: 'Oppenheimer',                 genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg' },
+  { title: 'The Batman',                  genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/74xTEgt7R36Fpooo50r9T25onhq.jpg' },
+  { title: 'Avatar: The Way of Water',    genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg' },
+  { title: 'Top Gun: Maverick',           genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/62HCnUTziyWcpDaBO2i1DX17ljH.jpg' },
+  { title: 'John Wick 4',                 genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w300/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg' },
+  { title: 'Barbie',                      genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w300/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg' },
+  { title: 'Spider-Man: No Way Home',     genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg' },
+  { title: 'Stranger Things',             genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/49WJfeN0moxb9IPfGn8AIqMGskD.jpg' },
+  { title: 'Wednesday',                   genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/9PFonBhy4cQy7Jz20NpMygczOkv.jpg' },
+  { title: 'House of the Dragon',         genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/7QMsOTMUswlwxJP0rTTZfmz2tX2.jpg' },
+  { title: 'The Last of Us',              genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg' },
+  { title: 'Breaking Bad',                genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/ggFHVNu6YYI5L9pCfOacjizRGt.jpg' },
+  { title: 'Peaky Blinders',              genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w300/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg' },
+  { title: 'The Crown',                   genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/1M876KPjulVwppEpldhdc8V4o68.jpg' },
+  { title: 'Succession',                  genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/7HW47XbkNQ5fiwQFYGWdw9gs144.jpg' },
+  { title: 'The Bear',                    genre: 'Series', poster: 'https://image.tmdb.org/t/p/w300/sHFlbKS3WLqMnp9t2ghADIJFnuQ.jpg' },
+  { title: 'Mission: Impossible',         genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/NNxYkU70HPurnNCSiCjYAmacwm.jpg' },
+  { title: 'Fast X',                      genre: 'HD',    poster: 'https://image.tmdb.org/t/p/w300/fiVW06jE7z9YnO4trhaMEdclSiC.jpg' },
+  { title: 'Guardians of the Galaxy 3',   genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg' },
 ];
 
 function buildMovieCard(m) {
