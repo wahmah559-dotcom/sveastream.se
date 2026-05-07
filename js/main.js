@@ -183,7 +183,7 @@ populateSlider('slider-row-1', movieData.slice(0, 12));
 populateSlider('slider-row-2', movieData.slice(8, 20));
 
 // ── Device-Based Pricing ─────────────────────────────────────────────────────────
-const pricingBasePrices  = { 1: 15, 3: 35, 6: 55, 12: 90 };
+const pricingBasePrices  = { 1: 99, 3: 249, 6: 449, 12: 749 };
 const pricingMultipliers = { 1: 1.0, 2: 1.6, 3: 2.1, 4: 2.5 };
 const deviceNotes = {
   1: '1 device — standard rate (×1.0)',
@@ -218,9 +218,9 @@ function updateDurationPrices(devices) {
 
     // Update WhatsApp deep-link with plan details
     if (btn) {
-      const label = card.dataset.months === '1' ? '1 Month' : card.dataset.months + ' Months';
-      const deviceWord = devices === 1 ? 'device' : 'devices';
-      const msg = `Hi! I'd like to subscribe to SveaStream — ${label} plan for ${devices} ${deviceWord}. Total: kr${total}. Please guide me through the activation.`;
+      const label = card.dataset.months === '1' ? '1 månad' : card.dataset.months + ' månader';
+      const deviceWord = devices === 1 ? 'enhet' : 'enheter';
+      const msg = `Hej! Jag vill beställa ${label} - ${total} kr för ${devices} ${deviceWord}. Tack!`;
       btn.href = `https://wa.me/17867352904?text=${encodeURIComponent(msg)}`;
     }
   });
