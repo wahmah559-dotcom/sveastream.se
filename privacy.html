@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
@@ -29,18 +29,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .legal-page { padding: 120px 0 80px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
-    .legal-page .legal-meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem; }
-    .legal-page h2 { font-size: 1.25rem; margin: 2rem 0 0.75rem; color: var(--accent-blue); }
-    .legal-page p, .legal-page li { line-height: 1.8; color: var(--text-secondary); margin-bottom: 0.75rem; }
-    .legal-page ul { padding-left: 1.5rem; margin-bottom: 1rem; }
-    .legal-page table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
-    .legal-page th, .legal-page td { border: 1px solid var(--border); padding: 0.6rem 0.9rem; text-align: left; }
-    .legal-page th { background: var(--card-bg); font-weight: 600; }
-    .legal-page a { color: var(--accent-blue); }
-  </style>
 </head>
 <body>
 
@@ -66,9 +54,8 @@
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-ghost">Logga in</a>
       <a href="pricing.html" class="btn btn-primary">Kom igång</a>
-      <button class="btn-theme-toggle" aria-label="Växla tema"><i class="fa-solid fa-sun"></i></button>
+      <button class="btn-theme-toggle" aria-label="Byt till ljust l&#228;ge"><i class="fa-solid fa-sun theme-icon-dark" aria-hidden="true"></i><i class="fa-solid fa-moon theme-icon-light" aria-hidden="true"></i></button>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Meny">
       <span></span><span></span><span></span>
@@ -85,10 +72,15 @@
   <a href="pricing.html" class="btn btn-primary">Kom igång gratis</a>
 </div>
 
-<section class="legal-page">
-  <div class="container" style="max-width:860px;">
+<section class="page-hero-sm">
+  <div class="container">
     <h1>Integritetspolicy</h1>
-    <p class="legal-meta">Senast uppdaterad: 4 maj 2026</p>
+  </div>
+</section>
+
+<main>
+  <div class="article-content">
+    <p><em>Senast uppdaterad: 4 maj 2026</em></p>
 
     <p>SveaStream ("vi", "oss", "vår") värnar om din integritet. Denna policy förklarar vilka personuppgifter vi samlar in, hur vi använder dem och vilka rättigheter du har enligt Europaparlamentets och rådets förordning (EU) 2016/679 (GDPR).</p>
 
@@ -102,16 +94,18 @@
       <li><strong>Kontaktuppgifter:</strong> namn, e-postadress och telefonnummer som du lämnar via WhatsApp eller kontaktformuläret.</li>
       <li><strong>Betalningsinformation:</strong> transaktionsreferenser (vi lagrar inte fullständiga kortuppgifter; betalning hanteras av tredjepart).</li>
       <li><strong>Tekniska uppgifter:</strong> IP-adress, enhetstyp, webbläsare och loggdata i samband med din användning av webbplatsen.</li>
-      <li><strong>Kommunikation:</strong> meddelanden du skickar till oss via WhatsApp eller e-post.</li>
+      <li><strong>Kommunikation via WhatsApp:</strong> meddelanden du skickar till oss via WhatsApp sparas i WhatsApps system och i vår kommunikationshistorik för att kunna ge dig support.</li>
+      <li><strong>E-postkommunikation:</strong> e-postmeddelanden du skickar till support@sveastream.se sparas i vår inkorg och används uteslutande för att besvara din förfrågan.</li>
+      <li><strong>Kontaktformulär:</strong> data du fyller i på webbplatsens kontaktformulär (namn, e-post, ämne, meddelande) skickas direkt till WhatsApp och sparas inte på våra servrar.</li>
     </ul>
 
-    <h2>3. Hur vi använder uppgifterna</h2>
-    <p>Vi behandlar dina personuppgifter för att:</p>
+    <h2>3. Rättslig grund för behandlingen</h2>
+    <p>Vi behandlar dina personuppgifter med följande rättsliga grunder enligt GDPR:</p>
     <ul>
-      <li>tillhandahålla och administrera din prenumeration (rättslig grund: avtal, artikel 6.1 b GDPR);</li>
-      <li>kommunicera med dig om din tjänst, fakturering och support (rättslig grund: avtal och berättigat intresse, artikel 6.1 b och f GDPR);</li>
-      <li>uppfylla rättsliga förpliktelser, t.ex. bokföringskrav (rättslig grund: rättslig förpliktelse, artikel 6.1 c GDPR);</li>
-      <li>förbättra vår webbplats och tjänst via anonym analysdata (rättslig grund: berättigat intresse, artikel 6.1 f GDPR).</li>
+      <li><strong>Avtal (art. 6.1 b):</strong> för att tillhandahålla och administrera din prenumeration samt hantera betalningar.</li>
+      <li><strong>Rättslig förpliktelse (art. 6.1 c):</strong> för att uppfylla bokföringskrav och andra lagstadgade skyldigheter.</li>
+      <li><strong>Berättigat intresse (art. 6.1 f):</strong> för att kommunicera support, förbättra webbplatsen och förhindra missbruk.</li>
+      <li><strong>Samtycke (art. 6.1 a):</strong> för analytiska cookies, om sådana används — du kan när som helst återkalla samtycket.</li>
     </ul>
 
     <h2>4. Lagringstid</h2>
@@ -133,18 +127,18 @@
     <h2>6. Dina rättigheter enligt GDPR</h2>
     <p>Du har rätt att:</p>
     <ul>
-      <li><strong>Tillgång:</strong> begära en kopia av de uppgifter vi har om dig.</li>
-      <li><strong>Rättelse:</strong> begära att felaktiga uppgifter korrigeras.</li>
-      <li><strong>Radering:</strong> begära att vi raderar dina uppgifter ("rätten att bli bortglömd"), med förbehåll för rättsliga krav.</li>
-      <li><strong>Begränsning:</strong> begära att behandlingen av dina uppgifter begränsas.</li>
-      <li><strong>Invändning:</strong> invända mot behandling som grundar sig på berättigat intresse.</li>
-      <li><strong>Dataportabilitet:</strong> begära att uppgifter du lämnat överförs i maskinläsbart format.</li>
-      <li><strong>Återkallelse av samtycke:</strong> om behandlingen grundar sig på samtycke kan du när som helst återkalla det.</li>
+      <li><strong>Tillgång (art. 15):</strong> begära en kopia av de uppgifter vi har om dig.</li>
+      <li><strong>Rättelse (art. 16):</strong> begära att felaktiga uppgifter korrigeras.</li>
+      <li><strong>Radering (art. 17):</strong> begära att vi raderar dina uppgifter ("rätten att bli bortglömd"), med förbehåll för rättsliga krav.</li>
+      <li><strong>Begränsning (art. 18):</strong> begära att behandlingen av dina uppgifter begränsas.</li>
+      <li><strong>Invändning (art. 21):</strong> invända mot behandling som grundar sig på berättigat intresse.</li>
+      <li><strong>Dataportabilitet (art. 20):</strong> begära att uppgifter du lämnat överförs i maskinläsbart format (JSON eller CSV).</li>
+      <li><strong>Återkallelse av samtycke:</strong> om behandlingen grundar sig på samtycke kan du när som helst återkalla det utan att det påverkar behandlingens laglighet dessförinnan.</li>
     </ul>
-    <p>Kontakta oss på <a href="mailto:support@sveastream.se">support@sveastream.se</a> för att utöva dina rättigheter. Du har också rätt att lämna klagomål till Integritetsskyddsmyndigheten (IMY) på <a href="https://www.imy.se" target="_blank" rel="noopener">www.imy.se</a>.</p>
+    <p>Kontakta oss på <a href="mailto:support@sveastream.se">support@sveastream.se</a> för att utöva dina rättigheter. Vi svarar inom 30 dagar. Du har också rätt att lämna klagomål till Integritetsskyddsmyndigheten (IMY) på <a href="https://www.imy.se" target="_blank" rel="noopener">www.imy.se</a>.</p>
 
     <h2>7. Cookies</h2>
-    <p>Vi använder cookies för att förbättra din upplevelse på webbplatsen. Läs vår <a href="/cookie-policy.html">Cookiepolicy</a> för fullständig information om vilka cookies vi använder och hur du hanterar dem.</p>
+    <p>Vi använder cookies och localStorage för att förbättra din upplevelse på webbplatsen. Läs vår <a href="cookie-policy.html">Cookiepolicy</a> för fullständig information om vilka cookies vi använder och hur du hanterar dem.</p>
 
     <h2>8. Säkerhet</h2>
     <p>Vi vidtar lämpliga tekniska och organisatoriska åtgärder för att skydda dina personuppgifter mot obehörig åtkomst, förlust eller ändring. All kommunikation sker via krypterade kanaler (HTTPS).</p>
@@ -153,13 +147,13 @@
     <p>Vi kan uppdatera denna integritetspolicy från tid till annan. Vid väsentliga ändringar informerar vi dig via e-post eller ett meddelande på vår webbplats. Datumet "Senast uppdaterad" längst upp på sidan återspeglar den senaste versionen.</p>
 
     <h2>10. Kontakt för datafrågor</h2>
-    <p>För frågor om hur vi hanterar dina personuppgifter, kontakta oss:</p>
+    <p>För frågor om hur vi hanterar dina personuppgifter, begäran om tillgång, radering eller portabilitet — kontakta oss:</p>
     <ul>
       <li>E-post: <a href="mailto:support@sveastream.se">support@sveastream.se</a></li>
       <li>WhatsApp: <a href="https://wa.me/17867352904" target="_blank" rel="noopener">+1 786 735 2904</a></li>
     </ul>
   </div>
-</section>
+</main>
 
 <footer class="footer-v2">
   <div class="container">
@@ -195,9 +189,9 @@
       <div class="footer-col-v2">
         <h4 class="footer-v2-heading">Juridik</h4>
         <ul class="footer-v2-list">
-          <li><a href="/privacy.html"><i class="fa-solid fa-chevron-right"></i> Integritetspolicy</a></li>
-          <li><a href="/terms.html"><i class="fa-solid fa-chevron-right"></i> Användarvillkor</a></li>
-          <li><a href="/cookie-policy.html"><i class="fa-solid fa-chevron-right"></i> Cookiepolicy</a></li>
+          <li><a href="privacy.html"><i class="fa-solid fa-chevron-right"></i> Integritetspolicy</a></li>
+          <li><a href="terms.html"><i class="fa-solid fa-chevron-right"></i> Användarvillkor</a></li>
+          <li><a href="cookie-policy.html"><i class="fa-solid fa-chevron-right"></i> Cookiepolicy</a></li>
         </ul>
       </div>
 
@@ -218,11 +212,11 @@
     <div class="footer-v2-bottom">
       <div>&copy; 2026 SveaStream. Alla rättigheter förbehållna.</div>
       <div class="footer-v2-legal">
-        <a href="/privacy.html">Integritetspolicy</a>
+        <a href="privacy.html">Integritetspolicy</a>
         <span>·</span>
-        <a href="/terms.html">Användarvillkor</a>
+        <a href="terms.html">Användarvillkor</a>
         <span>·</span>
-        <a href="/cookie-policy.html">Cookiepolicy</a>
+        <a href="cookie-policy.html">Cookiepolicy</a>
       </div>
       <div class="footer-v2-flag"><span>🇸🇪</span> Gjord med stolthet i Sverige</div>
     </div>
@@ -231,20 +225,12 @@
 
 <button id="back-to-top" aria-label="Tillbaka till toppen"><i class="fa-solid fa-arrow-up"></i></button>
 
-<div id="cookie-banner" role="dialog" aria-label="Cookie-medgivande">
-  <span class="cookie-icon" aria-hidden="true">🍪</span>
-  <p class="cookie-text">Vi använder cookies för att förbättra din upplevelse och analysera trafik. <a href="/cookie-policy.html">Läs mer</a>.</p>
-  <div class="cookie-actions">
-    <button id="accept-cookies" class="btn-cookie-accept">Acceptera</button>
-    <button id="decline-cookies" class="btn-cookie-decline">Avböj</button>
-  </div>
-</div>
-
 <a href="https://wa.me/17867352904?text=Hej!%20Jag%20%C3%A4r%20intresserad%20av%20SveaStream." class="float-wa" target="_blank" rel="noopener" aria-label="Chatta på WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
   <span class="float-wa-tooltip">Chatta med oss!</span>
 </a>
 
 <script src="js/main.js"></script>
+<script src="js/cookie-consent.js" defer></script>
 </body>
 </html>
