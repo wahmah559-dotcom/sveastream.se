@@ -1,88 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core Pages -->
   <url>
     <loc>https://sveastream.se/</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/channels.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/pricing.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/blog.html</loc>
-    <lastmod>2026-04-30</lastmod>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/contact.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://sveastream.se/privacy.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/terms.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/cookie-policy.html</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Articles (15 total) -->
+  <url>
+    <loc>https://sveastream.se/articles/basta-android-tv-box-iptv.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/best-devices-iptv.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/best-iptv-apps-smart-tv.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/best-swedish-iptv-2026.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/best-swedishiptv-guide-2026.html</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/fixa-iptv-buffering.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/fixa-iptv-ljud-undertext.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/install-iptv-firestick.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://sveastream.se/articles/iptv-husvagn-camping-sverige.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/articles/iptv-lagligt-sverige-2026.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/articles/iptv-test-24h-gratis.html</loc>
     <lastmod>2026-04-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://sveastream.se/articles/best-devices-iptv.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://sveastream.se/articles/best-swedish-iptv-2026.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://sveastream.se/articles/install-iptv-firestick.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/articles/nordic-iptv-vs-cable.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/articles/swedish-iptv-expats.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://sveastream.se/articles/watch-allsvenskan-iptv.html</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
-<url>
+  <url>
     <loc>https://sveastream.se/articles/watch-world-cup-sweden.html</loc>
     <lastmod>2026-05-07</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
-  
+
 </urlset>
