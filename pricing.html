@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
@@ -60,9 +60,8 @@
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-ghost">Logga in</a>
       <a href="pricing.html" class="btn btn-primary">Kom igång</a>
-      <button class="btn-theme-toggle" aria-label="Växla tema"><i class="fa-solid fa-sun"></i></button>
+      <button class="btn-theme-toggle" aria-label="Byt till ljust l&#228;ge"><i class="fa-solid fa-sun theme-icon-dark" aria-hidden="true"></i><i class="fa-solid fa-moon theme-icon-light" aria-hidden="true"></i></button>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Meny">
       <span></span><span></span><span></span>
@@ -459,11 +458,11 @@
     <div class="footer-v2-bottom">
       <div>&copy; 2026 SveaStream. Alla rättigheter förbehållna.</div>
       <div class="footer-v2-legal">
-        <a href="/privacy.html">Integritetspolicy</a>
+        <a href="privacy.html">Integritetspolicy</a>
         <span>·</span>
-        <a href="/terms.html">Användarvillkor</a>
+        <a href="terms.html">Användarvillkor</a>
         <span>·</span>
-        <a href="/cookie-policy.html">Cookiepolicy</a>
+        <a href="cookie-policy.html">Cookiepolicy</a>
       </div>
       <div class="footer-v2-flag"><span>🇸🇪</span> Gjord med stolthet i Sverige</div>
     </div>
@@ -473,16 +472,6 @@
 <!-- ── Tillbaka till toppen ────────────────────────────────────────────────── -->
 <button id="back-to-top" aria-label="Tillbaka till toppen"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- ── Cookie-banner ──────────────────────────────────────────────────────── -->
-<div id="cookie-banner" role="dialog" aria-label="Cookie-medgivande">
-  <span class="cookie-icon" aria-hidden="true">🍪</span>
-  <p class="cookie-text">Vi använder cookies för att förbättra din upplevelse och analysera trafik. <a href="/cookie-policy.html">Läs mer</a>.</p>
-  <div class="cookie-actions">
-    <button id="accept-cookies" class="btn-cookie-accept">Acceptera</button>
-    <button id="decline-cookies" class="btn-cookie-decline">Avböj</button>
-  </div>
-</div>
-
 <!-- ── Flytande WhatsApp ───────────────────────────────────────────────────── -->
 <a href="https://wa.me/17867352904?text=Hej!%20Jag%20%C3%A4r%20intresserad%20av%20SveaStream-priser.%20Kan%20du%20hj%C3%A4lpa%20mig%20v%C3%A4lja%20en%20plan%3F" class="float-wa" target="_blank" rel="noopener" aria-label="Chatta på WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
@@ -490,5 +479,6 @@
 </a>
 
 <script src="js/main.js"></script>
+<script src="js/cookie-consent.js" defer></script>
 </body>
 </html>
