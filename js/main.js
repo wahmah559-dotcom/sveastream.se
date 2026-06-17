@@ -123,18 +123,6 @@ if (filterBtns.length) {
   });
 }
 
-// ── Cookie banner ────────────────────────────────────────────────────────────────
-const cookieBanner = document.getElementById('cookie-banner');
-if (cookieBanner && !localStorage.getItem('svea_cookies')) {
-  setTimeout(() => cookieBanner.classList.add('show'), 900);
-  const dismissCookie = (accepted) => {
-    cookieBanner.classList.remove('show');
-    if (accepted) localStorage.setItem('svea_cookies', '1');
-  };
-  document.getElementById('accept-cookies')?.addEventListener('click', () => dismissCookie(true));
-  document.getElementById('decline-cookies')?.addEventListener('click', () => dismissCookie(false));
-}
-
 // ── Movie Slider ─────────────────────────────────────────────────────────────────
 const movieData = [
   { title: 'Dune: Part Two',              genre: '4K',    poster: 'https://image.tmdb.org/t/p/w300/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg' },
@@ -257,10 +245,8 @@ if (loadingScreen) {
 // ── Theme Toggle ─────────────────────────────────────────────────────────────────
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  const icon = theme === 'light' ? 'fa-moon' : 'fa-sun';
-  const label = theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode';
+  const label = theme === 'light' ? 'Byt till mörkt läge' : 'Byt till ljust läge';
   document.querySelectorAll('.btn-theme-toggle').forEach(btn => {
-    btn.innerHTML = `<i class="fa-solid ${icon}"></i>`;
     btn.setAttribute('aria-label', label);
   });
 }

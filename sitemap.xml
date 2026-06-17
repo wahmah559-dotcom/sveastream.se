@@ -25,7 +25,7 @@
 
   <url>
     <loc>https://sveastream.se/blog.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +38,7 @@
   </url>
 
   <!-- Legal Pages -->
-  <url>
+  <url>  
     <loc>https://sveastream.se/privacy.html</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>yearly</changefreq>
@@ -59,7 +59,14 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Articles (15 total) -->
+  <!-- Articles (16 total) -->
+  <url>
+    <loc>https://sveastream.se/articles/basta-iptv-sverige-guide.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <url>
     <loc>https://sveastream.se/articles/basta-android-tv-box-iptv.html</loc>
     <lastmod>2026-05-15</lastmod>
