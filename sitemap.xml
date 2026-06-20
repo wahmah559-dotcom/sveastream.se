@@ -25,7 +25,7 @@
 
   <url>
     <loc>https://sveastream.se/blog.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -59,7 +59,14 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Articles (16 total) -->
+  <!-- Articles (17 total) -->
+  <url>
+    <loc>https://sveastream.se/articles/viking-iptv-review.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <url>
     <loc>https://sveastream.se/articles/basta-iptv-sverige-guide.html</loc>
     <lastmod>2026-06-17</lastmod>
