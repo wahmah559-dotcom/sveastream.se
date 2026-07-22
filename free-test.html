@@ -1,0 +1,354 @@
+<!DOCTYPE html> <html lang="sv"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Gratis 24-timmars IPTV-test | SveaStream</title> <meta name="description" content="Prova SveaStream helt gratis i 24 timmar. Fyll i formuläret så skickas din förfrågan direkt till oss på WhatsApp."> <link rel="icon" type="image/svg+xml" href="favicon.svg"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin> <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript> <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript> <style> :root {
+    --blue:        #005EB8;
+    --blue-dark:   #004a93;
+    --blue-light:  #1a7fd4;
+    --yellow:      #FFCD00;
+    --yellow-dark: #e6b800;
+    --bg:          #0d0d14;
+    --bg-card:     #13131f;
+    --bg-section:  #0f0f1c;
+    --border:      #1e1e30;
+    --text:        #e8e8f0;
+    --text-muted:  #7878a0;
+    --text-dim:    #b0b0c8;
+    --radius:      10px;
+    --radius-lg:   16px;
+    --shadow:      0 4px 24px rgba(0,0,0,0.4);
+    --transition:  0.25s ease;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(0,94,184,0.16), transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(255,205,0,0.08), transparent 45%);
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Header ─────────────────────────────────────────────────────────── */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--blue), var(--blue-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0,94,184,0.4);
+    flex-shrink: 0;
+  }
+  .logo-svea { color: var(--yellow); }
+  .back-link {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color var(--transition);
+  }
+  .back-link:hover { color: var(--text); }
+
+  /* ── Main layout ────────────────────────────────────────────────────── */
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 60px;
+  }
+  .wrap { width: 100%; max-width: 520px; }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,205,0,0.1);
+    border: 1px solid rgba(255,205,0,0.3);
+    color: var(--yellow);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  h1 span { color: var(--blue-light); }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow);
+  }
+
+  /* ── Form ───────────────────────────────────────────────────────────── */
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  .input-wrap { position: relative; }
+  .input-wrap i.field-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 13px 16px 13px 42px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+  }
+  .form-group input::placeholder { color: var(--text-muted); }
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--blue-light);
+    box-shadow: 0 0 0 3px rgba(26,127,212,0.2);
+  }
+  .form-group.invalid input { border-color: #e5484d; }
+  .field-error {
+    display: none;
+    color: #ff8a8a;
+    font-size: 0.78rem;
+    margin-top: 6px;
+  }
+  .form-group.invalid .field-error { display: block; }
+
+  /* honeypot — hidden from real users, basic spam deterrent */
+  .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; height: 0; width: 0; }
+
+  .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+  }
+  .btn-whatsapp {
+    background: #25D366;
+    color: #06301b;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+  }
+  .btn-whatsapp:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 26px rgba(37,211,102,0.45); }
+  .btn-whatsapp:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+  .form-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* ── Alert ──────────────────────────────────────────────────────────── */
+  .alert {
+    display: none;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(229,72,77,0.1);
+    border: 1px solid rgba(229,72,77,0.35);
+    color: #ff9a9a;
+    padding: 13px 16px;
+    border-radius: var(--radius);
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+  .alert.show { display: flex; }
+  .alert i { margin-top: 2px; }
+
+  /* ── Loading spinner ────────────────────────────────────────────────── */
+  .spinner {
+    width: 18px; height: 18px;
+    border: 2.5px solid rgba(6,48,27,0.35);
+    border-top-color: #06301b;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Redirect view ──────────────────────────────────────────────────── */
+  #redirectView { display: none; text-align: center; }
+  .redirect-check {
+    width: 62px; height: 62px;
+    border-radius: 50%;
+    background: rgba(37,211,102,0.12);
+    border: 1px solid rgba(37,211,102,0.4);
+    color: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 auto 18px;
+  }
+  #redirectView h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+  #redirectView p { color: var(--text-dim); font-size: 0.92rem; margin-bottom: 22px; line-height: 1.6; }
+
+  .manual-link {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+  .manual-link:hover { color: var(--text); }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+  }
+  footer a { color: var(--blue-light); }
+
+  @media (max-width: 480px) {
+    .card { padding: 24px 20px; }
+  } </style> </head> <body> <div class="topbar"> <a href="index.html" class="logo"> <div class="logo-icon"><i class="fa-solid fa-play"></i></div> <span><span class="logo-svea">Svea</span>Stream</span> </a> <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Tillbaka</a> </div> <main> <div class="wrap"> <div class="hero-badge"><i class="fa-solid fa-bolt"></i> 100% gratis · Inget kort krävs</div> <h1>Testa <span>SveaStream</span> gratis i 24 timmar</h1> <p class="subtitle">Fyll i dina uppgifter nedan så öppnas WhatsApp automatiskt med ett färdigskrivet meddelande till oss. Vi skickar dina inloggningsuppgifter — med <strong>svenska kanaler högst upp</strong> i din kanallista — direkt i chatten.</p> <div class="card"> <div id="formView"> <div class="alert" id="formAlert"><i class="fa-solid fa-circle-exclamation"></i><span id="formAlertText"></span></div> <form id="testForm" novalidate> <div class="form-group" id="group-name"> <label for="name">Namn</label> <div class="input-wrap"> <i class="fa-solid fa-user field-icon"></i> <input type="text" id="name" name="name" placeholder="För- och efternamn" autocomplete="name" required> </div> <div class="field-error">Ange ditt namn.</div> </div> <div class="form-group" id="group-email"> <label for="email">E-post</label> <div class="input-wrap"> <i class="fa-solid fa-envelope field-icon"></i> <input type="email" id="email" name="email" placeholder="namn@exempel.se" autocomplete="email" required> </div> <div class="field-error">Ange en giltig e-postadress.</div> </div> <div class="hp-field" aria-hidden="true"> <label for="website">Lämna detta fält tomt</label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"> </div> <button type="submit" class="btn btn-whatsapp" id="submitBtn"> <span id="submitBtnText"><i class="fa-brands fa-whatsapp"></i> Hämta mitt gratistest via WhatsApp</span> </button> <div class="form-note"><i class="fa-solid fa-lock"></i> Dina uppgifter skickas bara till oss via WhatsApp — inget annat.</div> </form> </div> <div id="redirectView"> <div class="redirect-check"><i class="fa-brands fa-whatsapp"></i></div> <h2>Öppnar WhatsApp…</h2> <p>Du skickas nu vidare till WhatsApp med ditt meddelande färdigskrivet. Tryck bara på Skicka i chatten så tar vi hand om resten.</p> <a href="#" id="manualWaLink" class="manual-link">Öppnas inte WhatsApp automatiskt? Klicka här</a> </div> </div> </div> </main> <footer> &copy; <span id="year"></span> SveaStream. Behöver du hjälp? <a href="https://wa.me/17867352904" target="_blank" rel="noopener">Chatta med oss på WhatsApp</a> </footer> <script> document.getElementById('year').textContent = new Date().getFullYear();
+
+  // SveaStream support WhatsApp number (from contact.html), digits only, no "+".
+  const SUPPORT_WA_NUMBER = '17867352904';
+
+  const form          = document.getElementById('testForm');
+  const formView       = document.getElementById('formView');
+  const redirectView   = document.getElementById('redirectView');
+  const formAlert      = document.getElementById('formAlert');
+  const formAlertText  = document.getElementById('formAlertText');
+  const submitBtn      = document.getElementById('submitBtn');
+  const submitBtnText  = document.getElementById('submitBtnText');
+  const manualWaLink   = document.getElementById('manualWaLink');
+
+  function showAlert(message) {
+    formAlertText.textContent = message;
+    formAlert.classList.add('show');
+  }
+  function hideAlert() {
+    formAlert.classList.remove('show');
+  }
+  function setFieldInvalid(groupId, isInvalid) {
+    document.getElementById(groupId).classList.toggle('invalid', isInvalid);
+  }
+
+  function validateForm(data) {
+    let valid = true;
+
+    setFieldInvalid('group-name', false);
+    setFieldInvalid('group-email', false);
+
+    if (!data.name || data.name.trim().length < 2) {
+      setFieldInvalid('group-name', true);
+      valid = false;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(data.email)) {
+      setFieldInvalid('group-email', true);
+      valid = false;
+    }
+    return valid;
+  }
+
+  function buildWhatsAppUrl(name, email) {
+    const message =
+      `Hej SveaStream! 👋\n` +
+      `Jag vill gärna ha ett gratis 24-timmars test.\n\n` +
+      `Namn: ${name}\n` +
+      `E-post: ${email}\n\n` +
+      `Kan ni skicka mina inloggningsuppgifter (svenska kanaler överst)?`;
+    return `https://wa.me/${SUPPORT_WA_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    hideAlert();
+
+    const formData = new FormData(form);
+    const data = {
+      name: (formData.get('name') || '').toString().trim(),
+      email: (formData.get('email') || '').toString().trim(),
+      website: (formData.get('website') || '').toString().trim(), // honeypot
+    };
+
+    // Honeypot tripped — silently drop, pretend nothing happened.
+    if (data.website !== '') {
+      return;
+    }
+
+    if (!validateForm(data)) {
+      showAlert('Kontrollera de markerade fälten och försök igen.');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtnText.innerHTML = '<span class="spinner"></span> Öppnar WhatsApp…';
+
+    const waUrl = buildWhatsAppUrl(data.name, data.email);
+    manualWaLink.href = waUrl;
+
+    formView.style.display = 'none';
+    redirectView.style.display = 'block';
+
+    // Small delay so the "Öppnar WhatsApp…" state is visible before the
+    // browser navigates away — then redirect straight to WhatsApp.
+    setTimeout(function () {
+      window.location.href = waUrl;
+    }, 500);
+  }); </script> </body> </html> 

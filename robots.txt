@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block access to any future admin paths
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://sveastream.se/sitemap.xml
