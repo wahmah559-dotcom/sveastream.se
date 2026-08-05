@@ -6,3 +6,4 @@ Disallow: /admin/
 Disallow: /private/
 
 Sitemap: https://sveastream.se/sitemap.xml
+Sitemap: https://sveastream.se/sitemap-images.xml
