@@ -3765,10 +3765,12 @@ a.contact-detail-value:hover { color: var(--yellow); }
 /* ═══════════════════════════════════════════════════════════════════════════ */
 
 /* FIX 1: Hero - lighten the overlay in light theme (was too washed out) */
+/* FIX 2: reduced overlay opacity + slight contrast/saturation boost so the photo reads as sharp and vivid as it does in dark mode */
 [data-theme="light"] .hero {
   background:
-    linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.45)),
+    linear-gradient(rgba(255,255,255,0.16), rgba(255,255,255,0.24)),
     url('../images/iptv-family-watching-tv.webp') center/cover no-repeat;
+  filter: contrast(1.1) saturate(1.08);
 }
 /* Hero text in light needs to stay readable over the image */
 [data-theme="light"] .hero h1 {
