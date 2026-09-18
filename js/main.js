@@ -276,3 +276,99 @@ document.querySelectorAll('.btn-theme-toggle').forEach(btn => {
     applyTheme(next);
   });
 });
+
+/* Floating email and contact spacing; only pages with floating WhatsApp. */
+(function () {
+  const wa = document.querySelector('a.float-wa');
+  if (!wa || document.body.classList.contains('has-floating-contact')) return;
+  document.body.classList.add('has-floating-contact');
+  if (!document.querySelector('.float-email')) {
+    const address = 'support@sveastream.se';
+    const email = document.createElement('button');
+    email.type = 'button';
+    email.className = 'float-email';
+    email.setAttribute('aria-label', 'Kontakta oss via e-post');
+    email.setAttribute('aria-expanded', 'false');
+    email.setAttribute('aria-controls', 'email-contact-panel');
+    email.innerHTML = '<i class="fa-solid fa-envelope" aria-hidden="true"></i>';
+    const panel = document.createElement('div');
+    panel.id = 'email-contact-panel';
+    panel.className = 'email-contact-panel';
+    panel.hidden = true;
+    panel.setAttribute('role', 'region');
+    panel.setAttribute('aria-label', 'Kontakta oss via e-post');
+    const addressText = document.createElement('p');
+    addressText.className = 'email-contact-address';
+    addressText.textContent = address;
+    const gmail = document.createElement('a');
+    gmail.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(address);
+    gmail.target = '_blank';
+    gmail.rel = 'noopener noreferrer';
+    gmail.textContent = '\u00d6ppna Gmail';
+    const app = document.createElement('a');
+    app.href = 'mailto:' + address;
+    app.textContent = '\u00d6ppna e-postapp';
+    const copy = document.createElement('button');
+    copy.type = 'button';
+    copy.textContent = 'Kopiera e-postadress';
+    const status = document.createElement('p');
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    panel.append(addressText, gmail, app, copy, status);
+    wa.insertAdjacentElement('afterend', email);
+    email.insertAdjacentElement('afterend', panel);
+    const close = (restoreFocus) => {
+      panel.hidden = true;
+      email.setAttribute('aria-expanded', 'false');
+      if (restoreFocus) email.focus();
+    };
+    email.addEventListener('click', () => {
+      if (!panel.hidden) { close(false); return; }
+      panel.hidden = false;
+      email.setAttribute('aria-expanded', 'true');
+      gmail.focus();
+    });
+    document.addEventListener('click', event => {
+      if (!panel.hidden && !panel.contains(event.target) && !email.contains(event.target)) close(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !panel.hidden) { event.preventDefault(); close(true); }
+    });
+    document.addEventListener('focusin', event => {
+      if (!panel.hidden && !panel.contains(event.target) && !email.contains(event.target)) close(false);
+    });
+    copy.addEventListener('click', async () => {
+      copy.disabled = true;
+      status.textContent = '';
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(address);
+        status.textContent = 'Kopierad!';
+      } catch (_) {
+        status.textContent = 'Markera och kopiera e-postadressen ovan manuellt.';
+      } finally {
+        copy.disabled = false;
+      }
+    });
+  }
+  const language = document.getElementById('google_translate_element');
+  const footer = document.querySelector('footer');
+  if (language && footer) footer.appendChild(language);
+  let banner = null;
+  const update = () => {
+    document.body.style.setProperty('--contact-cookie-height', banner ? banner.offsetHeight + 'px' : '0px');
+  };
+  const resize = typeof ResizeObserver === 'function' ? new ResizeObserver(update) : null;
+  const watchBanner = () => {
+    const next = document.getElementById('cc-banner');
+    if (next !== banner) {
+      if (resize && banner) resize.unobserve(banner);
+      banner = next;
+      if (resize && banner) resize.observe(banner);
+    }
+    update();
+  };
+  new MutationObserver(watchBanner).observe(document.body, { childList: true });
+  window.addEventListener('resize', update, { passive: true });
+  watchBanner();
+})();
