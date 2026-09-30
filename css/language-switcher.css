@@ -1,17 +1,28 @@
-/* Ordinary links remain visible and usable without JavaScript. */
-.language-switcher {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px 16px;
-  padding: 10px 24px;
-  background: var(--bg-section, #0f0f1c);
-  color: var(--text, #e8e8f0);
-  border-bottom: 1px solid var(--border, #1e1e30);
-  font-size: .85rem;
+﻿/* Native disclosure keeps language links usable without JavaScript. */
+.language-switcher { position: relative; flex: 0 0 auto; color: var(--text, #e8e8f0); font-size: .85rem; }
+.language-switcher-toggle { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 8px 10px; list-style: none; cursor: pointer; border: 1px solid var(--border, #1e1e30); border-radius: 8px; background: var(--bg-card, #13131f); font-weight: 600; white-space: nowrap; }
+.language-switcher-toggle::-webkit-details-marker { display: none; }
+.language-switcher-chevron { width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); margin: -3px 2px 0 3px; }
+.language-switcher[open] .language-switcher-chevron { transform: rotate(225deg); margin-top: 3px; }
+.language-switcher-menu { position: absolute; top: calc(100% + 8px); right: 0; z-index: 1; min-width: 184px; padding: 6px; border: 1px solid var(--border, #1e1e30); border-radius: var(--radius, 10px); background: var(--bg-card, #13131f); box-shadow: var(--shadow, 0 4px 24px rgba(0,0,0,.4)); }
+.language-switcher-menu a { display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 12px; border-radius: 6px; color: var(--text-dim, #b0b0c8); text-decoration: none; white-space: nowrap; }
+.language-switcher-menu a[aria-current="page"] { color: var(--text, #e8e8f0); background: var(--bg-section, #0f0f1c); font-weight: 700; box-shadow: inset 3px 0 var(--blue-light, #1a7fd4); }
+.language-switcher-menu a:hover, .language-switcher-toggle:hover { color: var(--text, #e8e8f0); border-color: var(--blue-light, #1a7fd4); background: var(--bg-section, #0f0f1c); }
+.language-switcher-toggle:focus-visible, .language-switcher-menu a:focus-visible { outline: 2px solid var(--blue-light, #1a7fd4); outline-offset: 3px; }
+@media (max-width: 480px) { .language-switcher-toggle { padding: 8px; gap: 4px; } }
+/* Keep the existing header controls within the tablet header. */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .nav-inner:has(.language-switcher) .nav-links a { padding-inline: 7px; }
+  .nav-cta:has(.language-switcher) > .btn-primary { display: none; }
 }
-.language-switcher a { text-decoration: underline; text-underline-offset: 3px; }
-.language-switcher a[aria-current="page"] { font-weight: 700; color: var(--text, #e8e8f0); }
-.language-switcher a:focus-visible { outline: 2px solid var(--blue-light, #1a7fd4); outline-offset: 4px; }
-@media (max-width: 480px) { .language-switcher { justify-content: center; padding: 10px 16px; } }
+@media (max-width: 360px) {
+  .topbar:has(.language-switcher) .language-switcher-toggle { padding-inline: 6px; }
+}
+/* Render flags consistently on systems without flag emoji support. */
+.language-flag { display: inline-block; flex: 0 0 20px; width: 20px; height: 14px; font-size: 0; background-size: 100% 100%; }
+.language-flag-sv { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cpath fill='%23006aa7' d='M0 0h16v10H0z'/%3E%3Cpath fill='%23fecc00' d='M5 0h2v10H5zM0 4h16v2H0z'/%3E%3C/svg%3E"); }
+.language-flag-no { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 16'%3E%3Cpath fill='%23ba0c2f' d='M0 0h22v16H0z'/%3E%3Cpath fill='white' d='M6 0h4v16H6zM0 6h22v4H0z'/%3E%3Cpath fill='%2300205b' d='M7 0h2v16H7zM0 7h22v2H0z'/%3E%3C/svg%3E"); }
+@media (max-width: 360px) {
+  .nav-inner:has(.language-switcher) > .nav-logo { gap: 5px; font-size: 1rem; }
+  .nav-cta:has(.language-switcher) { gap: 4px; }
+}
