@@ -26,3 +26,7 @@
   .nav-inner:has(.language-switcher) > .nav-logo { gap: 5px; font-size: 1rem; }
   .nav-cta:has(.language-switcher) { gap: 4px; }
 }
+@media (min-width: 769px) and (max-width: 900px) {
+  .nav-inner:has(.language-switcher) .nav-links { gap: 4px; }
+  .nav-inner:has(.language-switcher) .nav-links a { padding-inline: 3px; }
+}
