@@ -30,3 +30,6 @@
   .nav-inner:has(.language-switcher) .nav-links { gap: 4px; }
   .nav-inner:has(.language-switcher) .nav-links a { padding-inline: 3px; }
 }
+@media (max-width: 480px) {
+  .topbar:has(.language-switcher) { flex-wrap: wrap; gap: 8px; }
+}
