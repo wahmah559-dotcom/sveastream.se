@@ -410,7 +410,105 @@
 }
 
 </style><link rel="canonical" href="https://sveastream.se/no/gratis-test.html"><noscript><style>#loading-screen{display:none!important}.fade-up,.fade-left,.fade-right,.scale-in{opacity:1!important;transform:none!important}</style></noscript>
-</head> <body> <div class="topbar"> <a href="/no/" class="logo"> <div class="logo-icon"><i class="fa-solid fa-play"></i></div> <span><span class="logo-svea">Svea</span>Stream</span> </a> <a href="/no/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Tilbake</a> </div><nav class="language-switcher" aria-label="Velg språk"><a href="/free-test.html" lang="sv" hreflang="sv-SE">Svenska</a><a href="/no/gratis-test.html" lang="nb" hreflang="nb-NO" aria-current="page">Norsk bokmål</a></nav> <main> <div class="wrap"> <div class="hero-badge"><i class="fa-solid fa-bolt"></i> 100 % gratis · Du trenger ikke betalingskort</div> <h1>Prøv <span>SveaStream</span> gratis i 24 timer</h1> <p class="subtitle">Fyll inn opplysningene dine, så åpnes WhatsApp med en ferdigskrevet melding til oss. Vi sender innloggingsopplysningene dine, med <strong>svenske kanaler øverst</strong> i kanallisten, direkte i chatten.</p> <div class="card"> <div id="formView"> <div class="alert" id="formAlert"><i class="fa-solid fa-circle-exclamation"></i><span id="formAlertText"></span></div> <form id="testForm" novalidate=""> <div class="form-group" id="group-name"> <label for="name">Navn</label> <div class="input-wrap"> <i class="fa-solid fa-user field-icon"></i> <input type="text" id="name" name="name" placeholder="Fornavn og etternavn" autocomplete="name" required=""> </div> <div class="field-error">Skriv inn navnet ditt.</div> </div> <div class="form-group" id="group-email"> <label for="email">E-post</label> <div class="input-wrap"> <i class="fa-solid fa-envelope field-icon"></i> <input type="email" id="email" name="email" placeholder="navn@example.com" autocomplete="email" required=""> </div> <div class="field-error">Skriv inn en gyldig e-postadresse.</div> </div> <div class="hp-field" aria-hidden="true"> <label for="website">La dette feltet stå tomt</label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"> </div> <button type="submit" class="btn btn-whatsapp" id="submitBtn"> <span id="submitBtnText"><i class="fa-brands fa-whatsapp"></i> Be om gratis prøveperiode via WhatsApp</span> </button> <div class="form-note"><i class="fa-solid fa-lock"></i> Opplysningene dine sendes bare til oss via WhatsApp.</div> </form> </div> <div id="redirectView"> <div class="redirect-check"><i class="fa-brands fa-whatsapp"></i></div> <h2>Åpner WhatsApp …</h2> <p>Du sendes videre til WhatsApp med meldingen ferdigskrevet. Trykk på Send i chatten, så hjelper vi deg videre.</p> <a href="#" id="manualWaLink" class="manual-link">Åpnes ikke WhatsApp automatisk? Klikk her</a> </div> </div> </div> </main> <footer> © <span id="year"></span> SveaStream. Trenger du hjelp? <a href="https://wa.me/17867352904" target="_blank" rel="noopener">Chat med oss på WhatsApp</a> </footer> <script> document.getElementById('year').textContent = new Date().getFullYear();
+<style data-faq-styles>
+#faq .container{ padding: 0 16px; }
+#faq.section{ padding: 96px 0; }
+#faq .text-center{ text-align: center; }
+#faq .badge{
+  display: inline-block;
+  background: rgba(0,94,184,0.18);
+  color: var(--blue-light);
+  border: 1px solid rgba(0,94,184,0.35);
+  border-radius: 100px;
+  padding: 4px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#faq .section-header{ margin-bottom: 56px; }
+#faq .section-header h2{
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+#faq .highlight{ color: var(--yellow); }
+#faq{line-height:1.6}
+.faq-section { background: var(--bg-card); }
+.faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.faq-item.open { border-color: var(--blue); }
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  gap: 16px;
+}
+.faq-question i {
+  color: var(--text-muted);
+  transition: transform var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+.faq-item.open .faq-question i { transform: rotate(180deg); color: var(--blue-light); }
+.faq-answer {
+  display: none;
+  padding: 0 24px 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+.faq-item.open .faq-answer { display: block; }
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hva er forskjellen mellom SveaStream.se og SveaStream.com?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SveaStream.se er en frittstående svensk tjeneste og har ingen tilknytning til sveastream.com eller andre nettsteder med lignende navn. Vi er kun ansvarlige for tjenester som bestilles via dette nettstedet og vår WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvordan fungerer den gratis prøveperioden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pr?veperioden gir deg tilgang til tjenesten i testperioden. Du trenger ikke kredittkort ? send oss en melding p? WhatsApp, s? aktiverer vi pr?veperioden. Etter pr?veperioden kan du velge ? abonnere eller la den utl?pe uten kostnader."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hvilke enheter kan jeg bruke SveaStream på?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SveaStream fungerer på smart-TV (Samsung, LG, Sony), Android- og iOS-mobiler og nettbrett, Windows- og Mac-maskiner, Amazon Fire Stick, Apple TV, Android TV-bokser, MAG-bokser og andre enheter som støtter IPTV eller M3U-formatet."
+      }
+    }
+  ]
+}</script>
+</head> <body> <div class="topbar"> <a href="/no/" class="logo"> <div class="logo-icon"><i class="fa-solid fa-play"></i></div> <span><span class="logo-svea">Svea</span>Stream</span> </a> <a href="/no/" class="back-link"><i class="fa-solid fa-arrow-left"></i> Tilbake</a> </div><nav class="language-switcher" aria-label="Velg språk"><a href="/free-test.html" lang="sv" hreflang="sv-SE">Svenska</a><a href="/no/gratis-test.html" lang="nb" hreflang="nb-NO" aria-current="page">Norsk bokmål</a></nav> <main> <div class="wrap"> <div class="hero-badge"><i class="fa-solid fa-bolt"></i> 100 % gratis · Du trenger ikke betalingskort</div> <h1>Prøv <span>SveaStream</span> gratis i 24 timer</h1> <p class="subtitle">Fyll inn opplysningene dine, så åpnes WhatsApp med en ferdigskrevet melding til oss. Vi sender innloggingsopplysningene dine, med <strong>svenske kanaler øverst</strong> i kanallisten, direkte i chatten.</p> <div class="card"> <div id="formView"> <div class="alert" id="formAlert"><i class="fa-solid fa-circle-exclamation"></i><span id="formAlertText"></span></div> <form id="testForm" novalidate=""> <div class="form-group" id="group-name"> <label for="name">Navn</label> <div class="input-wrap"> <i class="fa-solid fa-user field-icon"></i> <input type="text" id="name" name="name" placeholder="Fornavn og etternavn" autocomplete="name" required=""> </div> <div class="field-error">Skriv inn navnet ditt.</div> </div> <div class="form-group" id="group-email"> <label for="email">E-post</label> <div class="input-wrap"> <i class="fa-solid fa-envelope field-icon"></i> <input type="email" id="email" name="email" placeholder="navn@example.com" autocomplete="email" required=""> </div> <div class="field-error">Skriv inn en gyldig e-postadresse.</div> </div> <div class="hp-field" aria-hidden="true"> <label for="website">La dette feltet stå tomt</label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"> </div> <button type="submit" class="btn btn-whatsapp" id="submitBtn"> <span id="submitBtnText"><i class="fa-brands fa-whatsapp"></i> Be om gratis prøveperiode via WhatsApp</span> </button> <div class="form-note"><i class="fa-solid fa-lock"></i> Opplysningene dine sendes bare til oss via WhatsApp.</div> </form> </div> <div id="redirectView"> <div class="redirect-check"><i class="fa-brands fa-whatsapp"></i></div> <h2>Åpner WhatsApp …</h2> <p>Du sendes videre til WhatsApp med meldingen ferdigskrevet. Trykk på Send i chatten, så hjelper vi deg videre.</p> <a href="#" id="manualWaLink" class="manual-link">Åpnes ikke WhatsApp automatisk? Klikk her</a> </div> </div> </div> </main> <section class="section faq-section" id="faq"> <div class="container"> <div class="section-header text-center"> <div class="badge">Spørsmål og svar</div> <h2>Ofte stilte spørsmål <span class="highlight">og svar</span></h2> </div> <div class="faq-list"> <div class="faq-item"> <div class="faq-question"> Hva er forskjellen mellom SveaStream.se og SveaStream.com? <i class="fa-solid fa-chevron-down"></i> </div> <div class="faq-answer"> SveaStream.se er en frittstående svensk tjeneste og har ingen tilknytning til sveastream.com eller andre nettsteder med lignende navn. Vi er kun ansvarlige for tjenester som bestilles via dette nettstedet og vår WhatsApp. </div> </div> <div class="faq-item"> <div class="faq-question"> Hvordan fungerer den gratis prøveperioden? <i class="fa-solid fa-chevron-down"></i> </div> <div class="faq-answer"> Pr?veperioden gir deg tilgang til tjenesten i testperioden. Du trenger ikke kredittkort ? send oss en melding p? WhatsApp, s? aktiverer vi pr?veperioden. Etter pr?veperioden kan du velge ? abonnere eller la den utl?pe uten kostnader. </div> </div> <div class="faq-item"> <div class="faq-question"> Hvilke enheter kan jeg bruke SveaStream på? <i class="fa-solid fa-chevron-down"></i> </div> <div class="faq-answer"> SveaStream fungerer på smart-TV (Samsung, LG, Sony), Android- og iOS-mobiler og nettbrett, Windows- og Mac-maskiner, Amazon Fire Stick, Apple TV, Android TV-bokser, MAG-bokser og andre enheter som støtter IPTV eller M3U-formatet. </div> </div> </div> </div> </section> <script data-faq-accordion>document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});</script> <footer> © <span id="year"></span> SveaStream. Trenger du hjelp? <a href="https://wa.me/17867352904" target="_blank" rel="noopener">Chat med oss på WhatsApp</a> </footer> <script> document.getElementById('year').textContent = new Date().getFullYear();
 
   // SveaStream support WhatsApp number (from contact.html), digits only, no "+".
   const SUPPORT_WA_NUMBER = '17867352904';
