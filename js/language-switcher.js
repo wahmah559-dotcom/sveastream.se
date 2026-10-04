@@ -14,13 +14,14 @@
       toggle.focus();
     }
   });
-  switcher.addEventListener('click', (event) => {
-    if (event.target.closest('a')) close();
-  });
+  // Keep links visible until the browser completes their native navigation.
+  // Hiding a touched link during focus/click handling can cancel activation.
   document.addEventListener('click', (event) => {
     if (!switcher.contains(event.target)) close();
   });
   switcher.addEventListener('focusout', (event) => {
-    if (!switcher.contains(event.relatedTarget)) close();
+    // Touch browsers can report no focus destination when tapping a link.
+    // Outside clicks still dismiss the menu in that case.
+    if (event.relatedTarget && !switcher.contains(event.relatedTarget)) close();
   });
 });
