@@ -152,7 +152,7 @@ const movieData = [
 function buildMovieCard(m) {
   const qKey = m.genre === '4K' ? '4k' : m.genre.toLowerCase();
   return `<div class="movie-card">
-    <img class="movie-poster" src="${m.poster}" alt="${m.title}" width="200" height="290" loading="lazy" decoding="async">
+    <img class="movie-poster" src="${m.poster.replace(/\.webp$/, '-200.webp').replace('images/movies/', 'images/movies/performance/')}" srcset="${m.poster.replace(/\.webp$/, '-200.webp').replace('images/movies/', 'images/movies/performance/')} 200w, ${m.poster.replace(/\.webp$/, '-400.webp').replace('images/movies/', 'images/movies/performance/')} 400w" sizes="(max-width:600px) 158px, 200px" alt="${m.title}" width="200" height="290" loading="lazy" decoding="async">
     <div class="movie-overlay"></div>
     <span class="movie-quality quality-${qKey}">${m.genre}</span>
     <div class="movie-info">
