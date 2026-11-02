@@ -177,7 +177,7 @@ populateSlider('slider-row-1', movieData.slice(0, 12));
 populateSlider('slider-row-2', movieData.slice(8, 20));
 
 // ── Device-Based Pricing ─────────────────────────────────────────────────────────
-const pricingBasePrices  = { 1: 99, 3: 249, 6: 449, 12: 749 };
+const pricingBasePrices  = { 1: 119, 3: 249, 6: 449, 12: 749 };
 const pricingMultipliers = { 1: 1.0, 2: 1.6, 3: 2.1, 4: 2.5 };
 const deviceNotes = {
   1: '1 enhet – standardpris (×1,0)',
