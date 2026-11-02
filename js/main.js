@@ -179,7 +179,7 @@ const deviceNotes = {
   1: '1 device — standard rate (×1.0)',
   2: '2 devices — ×1.6 multiplier applied',
   3: '3 devices — ×2.1 multiplier applied',
-  4: '4 devices — ×2.5 multiplier applied',
+  4: '4 enheter – paketpris för vald period',
 };
 
 function updateDurationPrices(devices) {
@@ -190,8 +190,12 @@ function updateDurationPrices(devices) {
   document.querySelectorAll('.duration-card').forEach(card => {
     const base   = parseFloat(card.dataset.base);
     const months = parseInt(card.dataset.months);
-    const total  = Math.round(base * mult);
+    const total  = devices === 4 && months === 12 ? 2000 : Math.round(base * mult);
     const perMo  = (total / months).toFixed(2);
+    if (months === 12) {
+      const badge = card.querySelector('.dur-save-pill');
+      if (badge) badge.textContent = devices === 4 ? 'Bästa värde — Spara 44%' : 'Bästa värde — Spara 48%';
+    }
 
     const amountEl  = card.querySelector('.dur-amount');
     const monthlyEl = card.querySelector('.dur-monthly');
