@@ -215,7 +215,7 @@ function updateDurationPrices(devices) {
       const label = card.dataset.months === '1' ? '1 månad' : card.dataset.months + ' månader';
       const deviceWord = devices === 1 ? 'enhet' : 'enheter';
       const msg = `Hej! Jag vill beställa ${label} - ${total} kr för ${devices} ${deviceWord}. Tack!`;
-      btn.href = `https://wa.me/17867352904?text=${encodeURIComponent(msg)}`;
+      btn.href = `https://wa.me/447456067109?text=${encodeURIComponent(msg)}`;
     }
   });
 }
