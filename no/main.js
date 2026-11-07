@@ -219,7 +219,7 @@ function updateDurationPrices(devices) {
       const label = card.dataset.months === '1' ? '1 måned' : card.dataset.months + ' måneder';
       const deviceWord = devices === 1 ? 'enhet' : 'enheter';
       const msg = `Hei! Jeg vil bestille ${label} for ${devices} ${deviceWord} til ${total} NOK. Takk!`;
-      btn.href = `https://wa.me/447456067109?text=${encodeURIComponent(msg)}`;
+      btn.href = `https://wa.me/17867352904?text=${encodeURIComponent(msg)}`;
     }
   });
 }
